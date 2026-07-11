@@ -1,0 +1,68 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-sigforge}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-sigforge}
+      POSTGRES_DB: ${POSTGRES_DB:-sigforge}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-sigforge}:${POSTGRES_PASSWORD:-sigforge}@postgres:5432/${POSTGRES_DB:-sigforge}?schema=public
+      REDIS_URL: redis://redis:6379
+      API_PORT: 4000
+      PUBLIC_ASSET_BASE_URL: http://localhost:4000
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET:-dev-access}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-dev-refresh}
+      JWT_ACCESS_TTL: 15m
+      JWT_REFRESH_TTL: 30d
+      STORAGE_DIR: /data/storage
+      ANIMATION_PROVIDER: local
+    ports:
+      - "4000:4000"
+    volumes:
+      - api_storage:/data/storage
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    depends_on:
+      - api
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:4000
+    ports:
+      - "3000:3000"
+
+volumes:
+  postgres_data:
+  api_storage:
