@@ -1,0 +1,145 @@
+// SigForge Prisma schema
+// Multi-tenant model: everything is scoped by orgId at the service layer.
+// Events are indexed by (signatureId, createdAt) for the 30-day analytics chart.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum MembershipRole {
+  OWNER
+  ADMIN
+  MEMBER
+}
+
+enum AssetKind {
+  LOGO_STATIC
+  LOGO_ANIMATED
+  PHOTO
+  ICON
+}
+
+model Org {
+  id        String   @id @default(cuid())
+  name      String
+  slug      String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  memberships Membership[]
+  signatures  Signature[]
+  assets      SignatureAsset[]
+}
+
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  passwordHash  String
+  name          String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  memberships Membership[]
+  createdSigs Signature[]  @relation("SignatureAuthor")
+  refreshHash String?
+}
+
+model Membership {
+  id     String         @id @default(cuid())
+  role   MembershipRole @default(MEMBER)
+  orgId  String
+  userId String
+
+  org  Org  @relation(fields: [orgId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@unique([orgId, userId])
+  @@index([userId])
+}
+
+model Signature {
+  id          String   @id @default(cuid())
+  orgId       String
+  createdById String
+  name        String
+  template    String
+  publicSlug  String   @unique
+  fieldsJson  Json
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  org       Org      @relation(fields: [orgId], references: [id], onDelete: Cascade)
+  createdBy User     @relation("SignatureAuthor", fields: [createdById], references: [id])
+
+  assets       SignatureAsset[]
+  trackedLinks TrackedLink[]
+  impressions  ImpressionEvent[]
+  clicks       ClickEvent[]
+
+  @@index([orgId, updatedAt])
+}
+
+model SignatureAsset {
+  id          String   @id @default(cuid())
+  orgId       String
+  signatureId String?
+  key         String
+  kind        AssetKind
+  mimeType    String
+  bytes       Int
+  path        String
+  createdAt   DateTime @default(now())
+
+  org       Org        @relation(fields: [orgId], references: [id], onDelete: Cascade)
+  signature Signature? @relation(fields: [signatureId], references: [id], onDelete: Cascade)
+
+  @@unique([signatureId, key])
+  @@index([orgId])
+}
+
+model TrackedLink {
+  id          String   @id @default(cuid())
+  signatureId String
+  key         String
+  targetUrl   String
+  createdAt   DateTime @default(now())
+
+  signature Signature   @relation(fields: [signatureId], references: [id], onDelete: Cascade)
+  clicks    ClickEvent[]
+
+  @@unique([signatureId, key])
+}
+
+model ImpressionEvent {
+  id          String   @id @default(cuid())
+  signatureId String
+  createdAt   DateTime @default(now())
+  ipHash      String?
+  userAgent   String?
+
+  signature Signature @relation(fields: [signatureId], references: [id], onDelete: Cascade)
+
+  @@index([signatureId, createdAt])
+}
+
+model ClickEvent {
+  id            String   @id @default(cuid())
+  signatureId   String
+  trackedLinkId String
+  createdAt     DateTime @default(now())
+  ipHash        String?
+  userAgent     String?
+
+  signature   Signature   @relation(fields: [signatureId], references: [id], onDelete: Cascade)
+  trackedLink TrackedLink @relation(fields: [trackedLinkId], references: [id], onDelete: Cascade)
+
+  @@index([signatureId, createdAt])
+  @@index([trackedLinkId, createdAt])
+}
