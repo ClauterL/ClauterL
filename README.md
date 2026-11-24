@@ -127,18 +127,10 @@ My personal portfolio — a normal site and a gamified 3D loft version.
 
 ---
 
-## 📊 Activity
+## 📊 Languages
 
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ClauterL&layout=compact&langs_count=8&hide_border=false&bg_color=1d1030&title_color=f08a4b&text_color=f3e6dc&border_color=8a2f4c&border_radius=12&card_width=420&disable_animations=true" alt="Top languages"/>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ClauterL/ClauterL/output/snake-dark.svg"/>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ClauterL/ClauterL/output/snake-light.svg"/>
-    <img alt="Contribution snake" src="https://raw.githubusercontent.com/ClauterL/ClauterL/output/snake-dark.svg"/>
-  </picture>
 </p>
 
 <p align="center">
