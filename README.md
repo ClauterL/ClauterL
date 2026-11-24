@@ -1,15 +1,146 @@
-Hi, I'm [Claus.L]<br>I'm a passionate software developer specializing in web development and software design. I've worked on projects ranging from basic applications to complex systems.<br><br>🔭 Currently working on: React projects<br>👯 Looking to collaborate on: Social media influence projects<br>🤝 Seeking help with: Web development (React, Rails, Node.js, etc.)<br>🌱 Currently learning: Fullstack development and machine learning<br>💬 Ask me about: Web development, Raspberry Pi projects, Ruby on Rails<br>⚡ Fun fact: I created my first game at 13 using GameMaker, and I've made my own version of the 404 Dino game!
+<p align="center">
+  <img src="./assets/header.svg" width="100%" alt="Claus Laikku — Developer & Technical Expert"/>
+</p>
 
+<p align="center">
+  <a href="https://laikku.com">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=F08A4B&center=true&vCenter=true&width=720&lines=Developer+%26+Technical+Expert;React+%C2%B7+TypeScript+%C2%B7+Three.js+%C2%B7+Supabase;Founder+of+Havaida+Oy;ICT+student+%40+JAMK;Open+to+new+roles+in+Finland+%F0%9F%87%AB%F0%9F%87%AE" alt="Typing intro"/>
+  </a>
+</p>
 
-## 🌐 Socials:
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/R3D1#4005) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/https://www.instagram.com/cl_laikku/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/claus-laikku/) 
-
-# 💻 Tech Stack:
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![GithubPages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white) ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) ![Nuxt JS](https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxt.js&logoColor=#00DC82) ![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white) ![Vue.js](https://img.shields.io/badge/vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D) ![React Query](https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![Xamarin](https://img.shields.io/badge/Xamarin-3199DC?style=for-the-badge&logo=xamarin&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Bitbucket](https://img.shields.io/badge/bitbucket-%230047B3.svg?style=for-the-badge&logo=bitbucket&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=ClauterL&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=ClauterL&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ClauterL&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<p align="center">
+  <a href="https://laikku.com"><img src="https://img.shields.io/badge/laikku.com-portfolio-f08a4b?style=for-the-badge&labelColor=1d1030" alt="laikku.com"/></a>
+  <a href="https://laikku.dev"><img src="https://img.shields.io/badge/laikku.dev-dev_dashboard-c4555a?style=for-the-badge&labelColor=1d1030" alt="laikku.dev"/></a>
+  <a href="https://www.linkedin.com/in/claus-laikku/"><img src="https://img.shields.io/badge/LinkedIn-claus--laikku-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1d1030" alt="LinkedIn"/></a>
+  <a href="https://www.instagram.com/cl_laikku/"><img src="https://img.shields.io/badge/Instagram-cl__laikku-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=1d1030" alt="Instagram"/></a>
+  <a href="mailto:claikku@gmail.com"><img src="https://img.shields.io/badge/Email-claikku%40gmail.com-ffc977?style=for-the-badge&logo=gmail&logoColor=1d1030&labelColor=1d1030" alt="Email"/></a>
+</p>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=ClauterL&icon=0&color=1)](https://visitcount.itsvg.in)
+
+## 🌄 About me
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**⚡ Right now**
+
+- 🏢 Building products under my own company **Havaida Oy**
+- 🎓 Studying ICT at **JAMK University of Applied Sciences**
+- 🧩 Solving LeetCode & Codeforces problems — and writing up what I learn
+- 🔍 **Open to new roles** — dev, support & ops, Jyväskylä / remote / hybrid
+
+</td>
+<td width="50%" valign="top">
+
+**🧭 Background**
+
+- 💡 **C2 SmartLight** · Developer & Technical Expert · 2024–2026<br/><sub>Smart lighting control systems, installer mobile app, React map view</sub>
+- ☁️ **Topteam IT** · System Specialist · 2021–2024<br/><sub>Azure & Microsoft 365, security monitoring, backups</sub>
+- 🎮 Made my first game at 13 in GameMaker
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🚀 Featured work
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### 📦 WareTrack
+Warehouse management system with a live **3D warehouse view** — stock, locations and picking in one place.
+
+<sub>`React` `Three.js` `Supabase`</sub>
+
+[**▸ laikku.dev**](https://laikku.dev)
+
+</td>
+<td width="33%" valign="top">
+
+### 🌍 Havaida Worlds
+Interactive **3D worlds** in the browser — incl. an IoT smart city with sensors, device management and live data.
+
+<sub>`Three.js` `React` `IoT`</sub>
+
+[**▸ laikku.dev/worlds**](https://laikku.dev/worlds/)
+
+</td>
+<td width="33%" valign="top">
+
+### 🏙️ Kerros
+Housing company dashboard with a **3D apartment building** generated from OpenStreetMap data.
+
+<sub>`React` `Three.js` `OSM`</sub>
+
+[**▸ laikku.dev**](https://laikku.dev)
+
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+
+### 🕹️ Havaida Games
+Six company-themed browser mini-games built as a playable portfolio.
+
+<sub>`TypeScript` `Canvas`</sub>
+
+[**▸ laikku-games**](https://github.com/ClauterL/laikku-games)
+
+</td>
+<td width="33%" valign="top">
+
+### 🧠 LeetCode
+My LeetCode solutions in TypeScript — with tests and a learning journal.
+
+<sub>`TypeScript` `Algorithms`</sub>
+
+[**▸ leetcode**](https://github.com/ClauterL/leetcode)
+
+</td>
+<td width="33%" valign="top">
+
+### 🌅 Laikku.com
+My personal portfolio — a normal site and a gamified 3D loft version.
+
+<sub>`React` `Vite` `Tailwind`</sub>
+
+[**▸ laikku.com**](https://laikku.com)
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠️ Tech stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,vite,tailwind,threejs,nodejs,html,css&theme=dark" alt="Frontend stack"/><br/>
+  <img src="https://skillicons.dev/icons?i=supabase,postgres,prisma,python,cs,dotnet,azure,netlify,git,github&theme=dark" alt="Backend and tools"/><br/>
+  <img src="https://skillicons.dev/icons?i=githubactions,gitlab,vscode,blender,linux,raspberrypi&theme=dark" alt="Tooling"/>
+</p>
+
+---
+
+## 📊 Activity
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ClauterL&layout=compact&langs_count=8&hide_border=false&bg_color=1d1030&title_color=f08a4b&text_color=f3e6dc&border_color=8a2f4c&border_radius=12&card_width=420&disable_animations=true" alt="Top languages"/>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ClauterL/ClauterL/output/snake-dark.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ClauterL/ClauterL/output/snake-light.svg"/>
+    <img alt="Contribution snake" src="https://raw.githubusercontent.com/ClauterL/ClauterL/output/snake-dark.svg"/>
+  </picture>
+</p>
+
+<p align="center">
+  <img src="./assets/footer.svg" width="100%" alt="Thanks for visiting"/>
+</p>
